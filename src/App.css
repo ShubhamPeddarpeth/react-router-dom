@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+.tabs-container {
   display: flex;
-  flex-direction: column;
+}
+
+.tab {
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* Tabs.css */
+.tabs-container {
+  display: flex;
+  justify-content: space-around;
+  /* Adjust as needed */
+  /* Center the tabs horizontally */
   align-items: center;
+  /* Center items vertically */
+  width: 100%;
+  /* Make the tabs stretch across the full width */
+}
+
+.tab {
+  cursor: pointer;
+  margin: 0 10px;
+  /* Add margin around the tabs */
+  text-align: center;
+  position: relative;
+}
+
+
+.tab:last-child {
+  margin-right: 0;
+  /* Remove right margin for the last tab */
+}
+
+.image-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 200px;
+  margin-top: 20px;
+
+  /* Adjust the height as needed */
 }
 
-.App-link {
-  color: #61dafb;
+/* Add styles for the image */
+.image {
+  max-width: 100%;
+  /* Ensure the image does not exceed its container width */
+  max-height: 100%;
+  /* Ensure the image does not exceed its container height */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.underline-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* Align the underline with the tabs */
+}
+
+.underline {
+  width: 0;
+  height: 2px;
+  transition: width 0.3s ease;
 }
